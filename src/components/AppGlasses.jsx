@@ -128,6 +128,7 @@ class AppGlasses extends Component {
     };
 
     render() {
+        const { glassName, glassPrice, glassImg } = this.state;
         return (
             <section
                 className="glasses-app bg-dark"
@@ -138,9 +139,9 @@ class AppGlasses extends Component {
                     <div className="container row">
                         <section className="model d-flex justify-content-center col-5">
                             <FaceModel
-                                glassImg={this.state.glassImg}
-                                glassName={this.state.glassName}
-                                glassPrice={this.state.glassPrice}
+                                glassImg={glassImg}
+                                glassName={glassName}
+                                glassPrice={glassPrice}
                             />
                         </section>
                         <section className="glasses__list mt-4 d-flex justify-content-around flex-wrap col-7">
